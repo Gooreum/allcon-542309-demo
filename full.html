@@ -1,1 +1,21 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PSC 프리체크 · DPA 대시보드</title><link rel="stylesheet" href="style.css"></head><body data-full="true"><header><a href="index.html">◈ PSC 프리체크</a><span>입항 전, 준비를 한눈에</span></header><main id="app"></main><footer>가상 선박·보고서 기반 시연 · 실제 LLM 호출 없음 · 사진 첨부는 모의 처리</footer><script src="data.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#18354b">
+<meta name="description" content="PSC 프리체크 — 항차별 우선 점검부터 선내 점검, 시정 증빙, 입항 준비 보고서까지.">
+<title>PSC 프리체크 · 입항 준비</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2318354b'/%3E%3Cpath d='M10 24h20l-4 6H14zM16 12h8v12h-8z' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 이동</a>
+<div id="app"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="sheet" aria-labelledby="sheet-title"></dialog>
+<noscript>점검 기록을 사용하려면 브라우저의 JavaScript를 켜 주세요.</noscript>
+</body>
+</html>

@@ -562,3 +562,21 @@ window.PSC_DATA = {
     }
   ]
 };
+// Source values above are retained from the supplied FACTS.md / previous implementation.
+// CIC has 10 numbered questions and 11 display rows because question 1 contains 1a/1b.
+PSC_DATA.ships.forEach((ship, i) => { ship.imo = 'IMO 900000' + (i + 1); });
+PSC_DATA.sources = [
+  {title:'Tokyo MOU Annual Report 2025 · Table 2, 4, 7, 10, 15',url:'https://www.tokyo-mou.org/wp/wp-content/uploads/ANN25.pdf'},
+  {title:'Tokyo MOU · NIR Information Sheet · 2025-07',url:'https://www.tokyo-mou.org/wp/wp-content/uploads/NIR-information-sheet-ver-20250701.pdf'},
+  {title:'2026 Cargo Securing CIC · 공동 보도자료와 설문',url:'https://www.swedishclub.com/uploads/2026/08/Joint-Press-Release-on-CIC-on-Cargo-Securing-all.pdf'}
+];
+PSC_DATA.codes = {'fire-system':'07109','doors':'07105','lifeboat':'11101','maintenance':'15150'};
+PSC_DATA.crewIds = ['fire-system','fire-pump','fire-alarm','damper','maintenance','generator'];
+PSC_DATA.faultIds = ['fire-pump','generator'];
+PSC_DATA.scenes = [
+ {title:'항차 등록',story:'김 과장이 한바다스타호의 칭다오 입항 준비를 시작합니다.',task:'다음 항차를 등록해 보세요',success:'위험도·점검 창·우선순위를 확인하고 배로 보냅니다.'},
+ {title:'선내 자가점검',story:'기관장 Budi가 통신이 끊긴 기관실에서 6항목을 점검합니다.',task:'답변을 저장하고 연결해 보세요',success:'대기열이 비워지고 사무실에 미비 2건이 도착합니다.'},
+ {title:'검토와 시정 지시',story:'김 과장이 흐린 압력계 사진과 미비 2건을 검토합니다.',task:'사진 반려와 시정 지시를 보내세요',success:'선원 폰에 모국어 알림과 시정 과제가 도착합니다.'},
+ {title:'지난 지적 증빙',story:'지난 6월 부산 PSC 보고서에서 빠진 증빙을 찾습니다.',task:'보고서를 읽고 누락 증빙을 요청하세요',success:'15150 정비기록의 증빙 요청 3개가 배에 도착합니다.'},
+ {title:'입항 준비 보고서',story:'입항 이틀 전, 기관장이 시정한 설비 사진을 올립니다.',task:'시정을 승인하고 보고서를 발행하세요',success:'영어 보고서가 선장에게 전달됩니다. 미비 증빙은 남깁니다.'}
+];
